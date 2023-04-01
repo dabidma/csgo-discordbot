@@ -3,8 +3,8 @@ import discord
 from discord.ui import View, Button
 from steamScrape import *
 
-BOT_TOKEN = 'MTA5MDAzMDU0NDM4Mjg2MTM3Mw.GChRg4.9IdGWvX5kS7LZ0gpwps8R2yBC43GOg9dJUm_N0'
-CHANNEL_ID = 1090032011311329414
+BOT_TOKEN = 'your bot token here'
+CHANNEL_ID = 'your channel id here'
 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
