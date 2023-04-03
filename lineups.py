@@ -59,8 +59,6 @@ class Mirage_T(View):
         ]
     )
     async def select_callback(self, interaction, select):
-        # select.disabled = True
-        # await interaction.response.edit_message(view=self)
         await interaction.followup.send(f'{select.values[0]}')
 
 class Mirage_CT(View):
@@ -105,8 +103,6 @@ class Mirage_CT(View):
         ]
     )
     async def select_callback(self, interaction, select):
-        # select.disabled = True
-        # await interaction.response.edit_message(view=self)
         await interaction.followup.send(f'{select.values[0]}')
 
 def map_search(args):
