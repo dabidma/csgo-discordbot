@@ -20,15 +20,22 @@ async def on_ready():
 
 @bot.command()
 async def info(ctx):
-    await ctx.send('''`Stay up to date on all your skins!
+    await ctx.send('''```Stay up to date on all your skins!
 Use the command "!skin *your skin name here*" to find the current market value
-Use the command "!smoke *map* *ct or t* for line up videos (currently only mirage)`''')
+Use the command "!smoke *map* *ct or t* for line up videos (currently only mirage)```''')
 
 @bot.command()
 async def skin(ctx, *args):
-    search = ''
-    for word in args:
-        search += word.lower() + ' '
+    if len(args) == 1:
+        search = args[0]
+    else:
+        search = ''
+        for word in args:
+            if word == args[-1]:
+                search += word
+            else:
+                search += word + '+'
+        
     query = itemSearch(search)
     link = itemURL(search)
     print(link)

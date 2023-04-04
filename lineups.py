@@ -58,7 +58,7 @@ class Mirage_T(View):
             ),
         ]
     )
-    async def select_callback(self, interaction, select):
+    async def select_callback(self, interaction: discord.Interaction, select):
         await interaction.followup.send(f'{select.values[0]}')
 
 class Mirage_CT(View):
@@ -102,12 +102,11 @@ class Mirage_CT(View):
             ),
         ]
     )
-    async def select_callback(self, interaction, select):
+    async def select_callback(self, interaction: discord.Interaction, select: discord.SelectOption):
         await interaction.followup.send(f'{select.values[0]}')
 
 def map_search(args):
     maps = ['mirage', 'inferno', 'dust2']
-    print(f'{args[0]} ==== {args[1]}')
     if args[0].lower() not in maps:
         return 'Your search is not in our current maps database'
     elif args[1].lower() != 't' and args[1].lower() != 'ct':
