@@ -7,7 +7,7 @@ To use any commands, you can simply type "!info" for a list of commands.
 
 ### Skins Command
 When searching for skins, simply type "!skin {gun and skin name}" and it will output the first page of results from the steam market place. Discord library also has the ability to add buttons with the response, so there will be a link to view the listings of your search.
-<img href="./images/skin_command.png" title="skin command"/>
+<img src="./images/skin_command.png" title="skin command"/>
 
 ### Smokes Comand
 To utilize the smokes command, just type to the bot "!smoke {map} {T or CT side}" Currently the only available option is Mirage, but you can just copy and paste the code provided and enter other maps and gifs. The output of each request are gifs taken from Gfycat, which discord automatically plays instead of just sending the link.
