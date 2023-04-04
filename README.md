@@ -11,5 +11,6 @@ When searching for skins, simply type "!skin {gun and skin name}" and it will ou
 
 ### Smokes Comand
 To utilize the smokes command, just type to the bot "!smoke {map} {T or CT side}" Currently the only available option is Mirage, but you can just copy and paste the code provided and enter other maps and gifs. The output of each request are gifs taken from Gfycat, which discord automatically plays instead of just sending the link.
+<br>
 <img src="./images/smoke_command.png" title="smoke command"/>
 <img src="./images/smoke_command_menu.png" title="smoke menu"/>
